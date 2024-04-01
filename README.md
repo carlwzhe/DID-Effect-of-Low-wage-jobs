@@ -4,9 +4,13 @@ Group members: Faye Yang, Lingfeng Shi, Nuha Alamri, Oscar Lu, Qijin Liu, Weizi 
 
 Introduction:
 
+The study examines the effect of minimum wage increases on low-wage jobs in the U.S. from 1979 to 2016, finding that while the overall number of such jobs remained unchanged following wage hikes, average earnings for low-wage workers increased due to wage spillovers at the bottom of the wage distribution. Despite concerns, there was no significant evidence of job losses, even with higher minimum wages, except for some employment reductions in tradable sectors.
+
+Our group used the KNN method in the data pre-processing part, mainly focused on filling in the missing values, and casual forest to analyze the heterogenous.
+
 Data:
 
-Methodology: Causual forest
+Methodology: KNN and Casual forest
 
 Conclusion:
 
