@@ -14,4 +14,4 @@ Methodology: KNN and Casual forest
 
 Conclusion:
 
-Colab link:
+Colab link: https://drive.google.com/drive/folders/1-qAhrif1STNy8GQkvQ1yuVe3SDfu_dhx?usp=drive_link
