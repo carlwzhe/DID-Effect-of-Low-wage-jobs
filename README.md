@@ -44,7 +44,7 @@ Visualization: The notebook includes steps for visualizing the distribution of e
 
 **Colab link:**
 
-KNN: https://colab.research.google.com/drive/1zPoajfHL8RRymxR81S7-RpTUM7yyY87m?authuser=1
+KNN: https://colab.research.google.com/drive/1mK_u5fMY9Fk88L-Nk4OeooT8xLFVdRAu?authuser=1
 
 
 Casual Forest: https://drive.google.com/drive/folders/1-qAhrif1STNy8GQkvQ1yuVe3SDfu_dhx?usp=drive_link
