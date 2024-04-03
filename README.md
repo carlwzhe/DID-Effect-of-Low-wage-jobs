@@ -22,8 +22,8 @@ Data Preparation: The initial step involves loading and merging relevant dataset
 
 Defining Variables:
 
-Treatment Variable (T): In your case, the treatment variable seems to represent changes in the minimum wage, assumed to be MW_real. In practice, the treatment variable should signify the nature of the intervention or policy change, such as an increase in minimum wage.
-Outcome Variable (Y): The outcome variable is what you're interested in measuring the effect on due to the treatment. Here, it's represented by avewage, which could stand for average wage, indicating the effect of minimum wage changes on wages.
+Treatment Variable (T): In this case, the treatment variable seems to represent changes in the minimum wage, assumed to be MW_real. In practice, the treatment variable should signify the nature of the intervention or policy change, such as an increase in minimum wage.
+Outcome Variable (Y): Here, it's represented by avewage, which could stand for average wage, indicating the effect of minimum wage changes on wages.
 Covariates (X): These are the other variables that might influence the outcome aside from the treatment. In your example, demographic features like population by race, gender, and age groups are considered as covariates.
 Causal Forest Implementation: With the EconML library's CausalForestDML class, a causal forest model is instantiated with gradient boosting regressors for both the outcome and treatment models. This approach allows for non-linear relationships and interactions between the covariates and the treatment effect on the outcome.
 
