@@ -1,12 +1,33 @@
-# Machine Learning in DID
+# Machine Learning Enhancement of Minimum Wage Impact Analysis
 ## [The Effect of Minimum Wages on Low-wage Jobs](https://doi.org/10.1093/qje/qjz014)
 Group members: Faye Yang, Lingfeng Shi, Nuha Alamri, Oscar Lu, Qijin Liu, Weizi He.
 
 **Introduction:**
 
-The study examines the effect of minimum wage increases on low-wage jobs in the U.S. from 1979 to 2016, finding that while the overall number of such jobs remained unchanged following wage hikes, average earnings for low-wage workers increased due to wage spillovers at the bottom of the wage distribution. Despite concerns, there was no significant evidence of job losses, even with higher minimum wages, except for some employment reductions in tradable sectors.
+This repository contains a machine learning-based enhancement of the analysis originally presented in "The Effect of Minimum Wages on Low-Wage Jobs" by Cengiz, Dube, Lindner, and Zipperer (2019). The original study estimated the effect of minimum wages on employment using a difference-in-differences (DiD) approach across state-level minimum wage changes from 1979 to 2016. We build on this by addressing one of the main data challenges—missing values before DiD estimation.
 
-Our group used the **KNN method** in the data pre-processing part, mainly focused on filling in the missing values, and **casual forest** to analyze the heterogeneous effects.
+
+Original Study Overview
+The original research found that changes in the minimum wage did not lead to an overall loss of low-wage jobs. The study used a bunching estimator to assess the frequency distribution of wages and infer the impact on employment and earnings at the lower end of the wage distribution. They reported modest wage spillovers and no evidence of labor-labor substitution as a result of minimum wage changes.
+Enhancements with Machine Learning
+
+
+Handling Missing Data
+Rather than using 0 to fill missing values as in the original approach, we employ a K-Nearest Neighbors (KNN) algorithm to predict and inpute these missing values, aiming for a more informed and accurate estimation base for DiD analysis.
+
+
+Feature Importance
+We utilize a Random Forest algorithm to determine the significance of various features on the impact of minimum wage changes. Specifically, we calculate the effect of minimum wage changes on different racial demographics, adding a weighted analysis pre-regression (Figure 1).
+
+
+Results
+Our machine learning-enhanced approach yields insights that were not fully apparent in the original paper. For instance, our results illustrate a distribution of estimated treatment effects (Figure 2) and an asymmetrical unimodal distribution, suggesting that effects are similar across most observational units.
+
+
+Repository Structure
+data_preprocessing/: Scripts for data cleaning and missing value imputation using **KNN**.
+feature_analysis/: **Causal Random Forest models** to compute feature importance.
+
 
 **Data:**
 
