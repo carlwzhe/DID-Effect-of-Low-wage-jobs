@@ -11,6 +11,7 @@ Our group used the **KNN method** in the data pre-processing part, mainly focuse
 Data:
 
 Original data: from replication backpack table 2, including CK_groups, state_panels_with3quant1979 and VZmw_quaterly_lagsleads_1979_2016.
+Processed data: we split datasets CK_groups and state_panels_with3quant1979 by year. And using PreproT code to deal with VZmw_quaterly_lagsleads_1979_2016 to get the T variable using for the casual forest method.
 
 Methodology: KNN and Casual Forest
 
