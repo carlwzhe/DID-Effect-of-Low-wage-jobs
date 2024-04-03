@@ -48,20 +48,20 @@ Our group divided the salary distribution based on race, gender, age, and other 
 
 Data Preparation: The initial step involves loading and merging relevant datasets. Your example shows the merging of three datasets to form a final data frame, including demographic data (such as the population of black, white, gender-specific groups, and teenagers) along with other variables like state number and quarter dates.
 
-Defining Variables:
+**Defining Variables**:
 
 Treatment Variable (T): In this case, the treatment variable seems to represent changes in the minimum wage, assumed to be MW_real. In practice, the treatment variable should signify the nature of the intervention or policy change, such as an increase in minimum wage.
 Outcome Variable (Y): Here, it's represented by avewage, which could stand for average wage, indicating the effect of minimum wage changes on wages.
 Covariates (X): These are the other variables that might influence the outcome aside from the treatment. In your example, demographic features like population by race, gender, and age groups are considered as covariates.
 Causal Forest Implementation: With the EconML library's CausalForestDML class, a causal forest model is instantiated with gradient boosting regressors for both the outcome and treatment models. This approach allows for non-linear relationships and interactions between the covariates and the treatment effect on the outcome.
 
-Model Fitting: The causal forest model is fitted using the defined variables. This process involves estimating the causal effect of the treatment on the outcome variable, controlling for the covariates.
+**Model Fitting**: The causal forest model is fitted using the defined variables. This process involves estimating the causal effect of the treatment on the outcome variable, controlling for the covariates.
 
-Effect Estimation: After the model is fitted, you can estimate the treatment effects and visualize their distribution. This gives insights into how the treatment (e.g., changes in minimum wage) generally affects the outcome variable (e.g., average wages) across the dataset.
+**Effect Estimation**: After the model is fitted, you can estimate the treatment effects and visualize their distribution. This gives insights into how the treatment (e.g., changes in minimum wage) generally affects the outcome variable (e.g., average wages) across the dataset.
 
-Feature Importance: An additional step involves evaluating the importance of each covariate in predicting the treatment effect. This can help identify which factors are most influential in determining how the treatment affects the outcome.
+**Feature Importance**: An additional step involves evaluating the importance of each covariate in predicting the treatment effect. This can help identify which factors are most influential in determining how the treatment affects the outcome.
 
-Visualization: The notebook includes steps for visualizing the distribution of estimated treatment effects and the feature importance scores. These visual representations aid in interpreting the model's findings and understanding the impact of different variables on the treatment effect.
+**Visualization**: The notebook includes steps for visualizing the distribution of estimated treatment effects and the feature importance scores. These visual representations aid in interpreting the model's findings and understanding the impact of different variables on the treatment effect.
 
 **Colab link:**
 
