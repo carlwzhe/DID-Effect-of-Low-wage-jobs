@@ -10,7 +10,9 @@ Our group used the **KNN method** in the data pre-processing part, mainly focuse
 
 Data:
 
-Methodology: KNN and Casual forest
+Original data: from replication backpack table 2, including CK_groups, state_panels_with3quant1979 and VZmw_quaterly_lagsleads_1979_2016.
+
+Methodology: KNN and Casual Forest
 
 **KNN Part:**
 
@@ -37,4 +39,6 @@ Visualization: The notebook includes steps for visualizing the distribution of e
 
 Conclusion:
 
-Colab link: https://drive.google.com/drive/folders/1-qAhrif1STNy8GQkvQ1yuVe3SDfu_dhx?usp=drive_link
+Colab link:
+KNN: https://drive.google.com/drive/u/1/folders/1FDs1Ty5EZ1ZW3px2HUOwozj2zp4CfvPV
+Casual Forest: https://drive.google.com/drive/folders/1-qAhrif1STNy8GQkvQ1yuVe3SDfu_dhx?usp=drive_link
