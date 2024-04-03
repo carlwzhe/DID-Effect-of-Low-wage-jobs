@@ -43,5 +43,8 @@ Feature Importance: An additional step involves evaluating the importance of eac
 Visualization: The notebook includes steps for visualizing the distribution of estimated treatment effects and the feature importance scores. These visual representations aid in interpreting the model's findings and understanding the impact of different variables on the treatment effect.
 
 **Colab link:**
-KNN: https://drive.google.com/drive/u/1/folders/1FDs1Ty5EZ1ZW3px2HUOwozj2zp4CfvPV
+
+KNN: https://colab.research.google.com/drive/1zPoajfHL8RRymxR81S7-RpTUM7yyY87m?authuser=1
+
+
 Casual Forest: https://drive.google.com/drive/folders/1-qAhrif1STNy8GQkvQ1yuVe3SDfu_dhx?usp=drive_link
