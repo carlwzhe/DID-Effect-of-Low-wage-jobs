@@ -14,6 +14,27 @@ Methodology: KNN and Casual forest
 
 Our group divided the salary distribution based on race, gender, age, and other factors in various US states from 1979 to 2016 by year, then used KNN in machine learning to fill in the missing values, and then defined the feature variables (we chose year and quarter and state number statenum and some demographic characteristics as examples). Additionally, we assume that 'MW_real' is used directly as the treatment variable and 'emp' (employment number) as the outcome variable.
 
+**KNN Part:**
+
+**Casual Forest Part:**
+
+Data Preparation: The initial step involves loading and merging relevant datasets. Your example shows the merging of three datasets to form a final data frame, including demographic data (such as the population of black, white, gender-specific groups, and teenagers) along with other variables like state number and quarter dates.
+
+Defining Variables:
+
+Treatment Variable (T): In your case, the treatment variable seems to represent changes in the minimum wage, assumed to be MW_real. In practice, the treatment variable should signify the nature of the intervention or policy change, such as an increase in minimum wage.
+Outcome Variable (Y): The outcome variable is what you're interested in measuring the effect on due to the treatment. Here, it's represented by avewage, which could stand for average wage, indicating the effect of minimum wage changes on wages.
+Covariates (X): These are the other variables that might influence the outcome aside from the treatment. In your example, demographic features like population by race, gender, and age groups are considered as covariates.
+Causal Forest Implementation: With the EconML library's CausalForestDML class, a causal forest model is instantiated with gradient boosting regressors for both the outcome and treatment models. This approach allows for non-linear relationships and interactions between the covariates and the treatment effect on the outcome.
+
+Model Fitting: The causal forest model is fitted using the defined variables. This process involves estimating the causal effect of the treatment on the outcome variable, controlling for the covariates.
+
+Effect Estimation: After the model is fitted, you can estimate the treatment effects and visualize their distribution. This gives insights into how the treatment (e.g., changes in minimum wage) generally affects the outcome variable (e.g., average wages) across the dataset.
+
+Feature Importance: An additional step involves evaluating the importance of each covariate in predicting the treatment effect. This can help identify which factors are most influential in determining how the treatment affects the outcome.
+
+Visualization: The notebook includes steps for visualizing the distribution of estimated treatment effects and the feature importance scores. These visual representations aid in interpreting the model's findings and understanding the impact of different variables on the treatment effect.
+
 Conclusion:
 
 Colab link: https://drive.google.com/drive/folders/1-qAhrif1STNy8GQkvQ1yuVe3SDfu_dhx?usp=drive_link
