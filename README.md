@@ -12,9 +12,9 @@ Data:
 
 Methodology: KNN and Casual forest
 
-Our group divided the salary distribution based on race, gender, age, and other factors in various US states from 1979 to 2016 by year, then used KNN in machine learning to fill in the missing values, and then defined the feature variables (we chose year and quarter and state number statenum and some demographic characteristics as examples). Additionally, we assume that 'MW_real' is used directly as the treatment variable and 'emp' (employment number) as the outcome variable.
-
 **KNN Part:**
+
+Our group divided the salary distribution based on race, gender, age, and other factors in various US states from 1979 to 2016 by year, then used KNN in machine learning to fill in the missing values, and then defined the feature variables (we chose year and quarter and state number statenum and some demographic characteristics as examples). Additionally, we assume that 'MW_real' is used directly as the treatment variable and 'emp' (employment number) as the outcome variable.
 
 **Casual Forest Part:**
 
